@@ -1,0 +1,17 @@
+1.what is the Makefile
+    makefile关系到了整个工程的编译规则。一个工程中的源文件不计数，其按类型、功能、模块分别放在若干个目录中，makefile定义了一系列的规则来
+指定，哪些文件需要先编译，哪些文件需要后编译，哪些文件需要重新编译，甚至于进行更复杂的功能操作，因为makefile就像一个Shell 脚本一样，
+其中也可以执行操作系统的命令。推荐资料（make与Makefile）：https://blog.csdn.net/lihao21/article/details/68137648
+                             链接（makefile介绍）：https://blog.csdn.net/Julialove102123/article/details/79045818
+                             链接（Makefile规则）：https://blog.csdn.net/hello_world6/article/details/51873807
+
+2.关于cuda流
+    1.什么是流
+        CUDA流是一系列异步的CUDA操作，这些操作按照主机代码确定的顺序在设备上执行，这些操作包括在主机与设备
+      间进行数据传输，内核启动以及大多数由主机发起但由设备处理的其他命令。流中操作的执行相对于主机总是异
+      步的
+         使用多个流同时启动多个内核，可以实现网格级并发。
+         
+3.什么是cuda计算能力？
+
+4.kepler和fermi架构的意思是现在的显卡基于这两种架构其中之一吗？
