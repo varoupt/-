@@ -1,0 +1,17 @@
+一、关于使用profiling的总结
+
+  1.首先设置环境变量，我第一次错在照着别人的路径直接写，而本机没有，第二次错在没有加入上关键字HCC_
+    本机环境下正确配置如下： HCC_PROFILE=2
+                            HCC_PROFILE_FILE=/public/home/zhangyannan/HPL_iscas_test/profile/profile.out
+                            
+  2.运行.out文件后，profile文件夹下自动生成一个文件profile
+  3.进入到profile目录下，grep '#0.' ./profile_0.out > device0.out(错误2，没有grep和''之间的空格)
+  4.然后执行rpt device0.out -g device.json
+  5.打开.json文件，修改
+  
+  
+二、最优化流程分析
+      1.确定实验设计思路和实现
+      2.将模板程序在vscode上修改掉CHECK（）
+      3.在模板程序上进行改进
+      4.输入服务器中
